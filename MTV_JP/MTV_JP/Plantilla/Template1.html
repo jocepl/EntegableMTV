@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    {{hora_actual}}
+            {% if hora_actual.hour < 14 %} 
+        <h1> Hola ¡Buenos días!<h1> 
+            {% elif hora_actual.hour > 13 and hora_actual.hour < 18 %}
+        <h1> Hola ¡Buenas tardes!<h1>
+            {% else %}
+        <h1>Hola ¡Buenas noches!<h1>
+            {% endif %}
+    </p>
+<p>{{documento1}} <p>
+
+</body>
+</html>
